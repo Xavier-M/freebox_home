@@ -51,7 +51,7 @@ async def async_setup_entry(
                 FreeboxHomeNodeCover(
                     router,
                     home_node,
-                    HOME_NODES_COVERS["shutter"],
+                    HOME_NODES_COVERS["opener"],
                 )
             )
         elif home_node["category"] == "basic_shutter":
