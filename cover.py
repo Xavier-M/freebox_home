@@ -46,6 +46,14 @@ async def async_setup_entry(
                     HOME_NODES_COVERS["shutter"],
                 )
             )
+        elif home_node["category"] == "opener":
+            entities.append(
+                FreeboxHomeNodeCover(
+                    router,
+                    home_node,
+                    HOME_NODES_COVERS["shutter"],
+                )
+            )
         elif home_node["category"] == "basic_shutter":
             entities.append(
                 FreeboxHomeNodeBasicCover(
